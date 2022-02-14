@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tower of Hanoi</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="heading">Tower of Hanoi</h1>
+    <div id="control-panel">
+        <div>
+            <label for="game-level">Select level: </label>
+            <select id="game-level" name="game-level">
+                <option value="1" selected>level 1</option>
+                <option value="2">level 2</option>
+                <option value="3">level 3</option>
+                <option value="4">level 4</option>
+                <option value="5">level 5</option>
+                <option value="6">level 6</option>
+                <option value="7">level 7</option>
+            </select>
+        </div>
+        <button id="restart-game" class="btn">Restart</button>
+    </div>
+    <div id="game-board">
+        <canvas id="canvas"></canvas>
+        <h1 id="win-message" >you won !!!</h1>
+    </div>
+
+    <div id="rules">
+        <h2>Rules: </h2>
+        <ol>
+            <li>You have to transfer all the blocks from tower A to either tower B or tower C.</li>
+            <li>You can move only the top block of the tower.</li>
+            <li>A larger block cannot be placed on top of a smaller block</li>
+        </ol>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
